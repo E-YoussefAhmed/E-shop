@@ -33,7 +33,7 @@ export default async function Home({
         >
           {products.map((product: Product) => (
             <Link key={product.id} href={`/product/${product.id}`}>
-              <ProductCard data={product} />
+              <ProductCard data={product} key={product.id} />
             </Link>
           ))}
         </div>
