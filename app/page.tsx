@@ -1,4 +1,7 @@
+export const revalidate = 0;
+
 import Link from "next/link";
+import { cookies } from "next/headers";
 import { Product } from "@prisma/client";
 
 import { getProducts } from "@/lib/actions/product";
@@ -15,6 +18,7 @@ export default async function Home({
     searchTerm?: string | null;
   };
 }) {
+  cookies();
   const products = await getProducts({ category, searchTerm });
 
   if (products?.length === 0 || !products) {
