@@ -19,7 +19,7 @@ const OrderItem = ({ item }: { item: CartProductType }) => {
           />
         </div>
         <div className="flex flex-col gap-1">
-          <div>{truncateText(item.name)}</div>
+          <div className="w-1/2 break-words">{truncateText(item.name)}</div>
           <div>{item.selectedImg.color}</div>
         </div>
       </div>

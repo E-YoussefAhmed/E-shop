@@ -100,7 +100,7 @@ const ManageProductsClient = ({ products }: { products: Product[] }) => {
             />
             <ActionBtn
               icon={MdRemoveRedEye}
-              onClick={() => router.push(`product/${params.row.id}`)}
+              onClick={() => router.push(`/product/${params.row.id}`)}
             />
           </div>
         );

@@ -17,7 +17,7 @@ const ProductCard = ({ data }: { data: any }) => {
   return (
     <div
       className="col-span-1 cursor-pointer border-[1.2px] border-slate-200 bg-slate-50 
-    rounded-sm p-2 transition hover:scale-105 text-center text-sm"
+    rounded-sm p-2 transition hover:scale-105 text-center text-sm h-full"
     >
       <div className="flex flex-col items-center w-full gap-1">
         <div className="aspect-square overflow-hidden w-full relative">
@@ -28,7 +28,7 @@ const ProductCard = ({ data }: { data: any }) => {
             alt={data.name}
           />
         </div>
-        <div className="mt-4">{truncateText(data.name)}</div>
+        <div className="mt-4 break-words w-full">{truncateText(data.name)}</div>
         <div>
           <Rating value={productRating} precision={0.5} readOnly />
         </div>
