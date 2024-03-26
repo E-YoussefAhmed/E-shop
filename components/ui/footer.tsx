@@ -41,11 +41,11 @@ const Footer = () => {
             <p>
               Made by{" "}
               <a
-                href="https://joe-official.vercel.app"
+                href="https://devlab-tech.com"
                 target="_blank"
                 className="text-violet-500"
               >
-                Youssef
+                DevLab
               </a>
             </p>
           </div>
